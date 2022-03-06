@@ -54,7 +54,7 @@ input:hover, textarea:hover{
 }
 
 input:focus, textarea:focus{
-    border-color: #f62acdc
+    border-color: #62acdc;
 }
 
 textarea{
@@ -500,8 +500,8 @@ footer{
 }
 
 .form__submit{
-    background-color: #f62acdc
-    border: 2px solid #f62acdc
+    background-color: #62acdc;
+    border: 2px solid #62acdc;
     color: white;
     font-weight: bold;
     width: 100%;
@@ -517,8 +517,9 @@ footer{
 }
 
 .form__submit:active{
-    border-color: #f62acdc
-    color: #f62acdc}
+    border-color: #62acdc;
+    color: #62acdc;
+}
 
 .modal__overlay{
     position: absolute;
