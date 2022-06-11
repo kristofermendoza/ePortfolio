@@ -54,7 +54,7 @@ input:hover, textarea:hover{
 }
 
 input:focus, textarea:focus{
-    border-color: #62acdc;
+    border-color: #99CA7F;
 }
 
 textarea{
@@ -281,6 +281,56 @@ nav{
    }
 }
 
+/* Languages */
+
+.language__img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms;
+}
+
+.language:hover .language__img{
+    filter:brightness(80%);
+    opacity: .86;
+    transform: scale(0.9);
+}
+
+.language{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language__name{
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.language:hover .language__name{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
 /* PROJECTS */
 
 .project {
@@ -501,8 +551,8 @@ footer{
 }
 
 .form__submit{
-    background-color: #62acdc;
-    border: 2px solid #62acdc;
+    background-color: #99CA7F;
+    border: 2px solid #99CA7F;
     color: white;
     font-weight: bold;
     width: 100%;
@@ -518,8 +568,8 @@ footer{
 }
 
 .form__submit:active{
-    border-color: #62acdc;
-    color: #62acdc;
+    border-color: #99CA7F;
+    color: #99CA7F;
 }
 
 .modal__overlay{
