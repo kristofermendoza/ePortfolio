@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html{
@@ -101,8 +101,8 @@ label{
     line-height: 1;
 }
 
-.blue{
-    color: #62acdc !important;
+.green{
+    color: #99CA7F !important;
 }
 
 .link__hover-effect{
@@ -217,7 +217,7 @@ nav{
 }
 
 .social__link{
-    background-color: #62acdc;
+    background-color: #99CA7F;
     color: white;
     padding: 10px;
     width: 32px;
@@ -381,6 +381,7 @@ footer{
 
 .footer__logo--img{
     width: 50px;
+    filter: invert(1);
 }
 
 .footer__social--list{

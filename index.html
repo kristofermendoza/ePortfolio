@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristofer Mendoza</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -57,14 +58,14 @@
         <header class="header">
             <div class="header__content">
                 <h1 class="title">Hello</h1>
-                <h1 class="title blue">I'm Kris.</h1>
+                <h1 class="title green">I'm Kris.</h1>
                 <p class="header__para">
-                    I'm a <b class="blue" >Software Engineer</b> with a strong passion for building web
+                    I'm a <b class="green" >Software Engineer</b> with a strong passion for building web
                     applications with great user experiences.
                     <br>
-                    Here's a bit more <b class="blue" onclick="toggleModal()">about me!</b>
+                    Here's a bit more <b class="green" onclick="toggleModal()">about me!</b>
                 </p>
-                <div class="social__list blue">
+                <div class="social__list green">
                     <a href="https://www.linkedin.com/in/kristofer-mendoza-594749229/" target="_blank" class="social__link click">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -90,10 +91,10 @@
                 <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
                 <p class="modal__para">
-                    I am a 21 year old Frontend Software Engineer with a strong passion for developing websites with great <b class="blue">user experiences!</b>
+                    I am a 21 year old Frontend Software Engineer with a strong passion for developing websites with great <b class="green">user experiences!</b>
                     <br>
                     <br>
-                    I currently am working through difficult engineering issues and learning from a team that consists of some of the most <b class="blue">talented</b> and <b class="blue">experienced</b> software engineers everyday! <!-- what you can bring to the table -->
+                    I currently am working through difficult engineering issues and learning from a team that consists of some of the most <b class="green">talented</b> and <b class="green">experienced</b> software engineers everyday! <!-- what you can bring to the table -->
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -141,6 +142,7 @@
             </div>
             <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
         </div>
+        <!-- OLD CONCEPT didn't like how it fit with the flow of portfolio
         <img src="./assets/semi circle.svg" class="shape shape--0">
         <img src="./assets/circle.svg" class="shape shape--1">
         <img src="./assets/squiggly.svg" class="shape shape--2">
@@ -150,14 +152,41 @@
         <img src="./assets/squiggly.svg" class="shape shape--6">
         <img src="./assets/circle.svg" class="shape shape--7">
         <img src="./assets/semi circle.svg" class="shape shape--8">
+        -->
     </section>
     <section id="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
-                    Here are some of my <span class="blue">projects</span>
+                    Here are some of my <span class="green">projects</span>
                 </h1>
                 <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/whiteboard-app-sc.jpg" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Whiteboard - "To-do" App!
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS(Bootstrap 5), JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    My first solo project designed and created only using documentation I read off the internet.
+                                    This project was mainly created to play the role of a developer and to sort out any issues I had creating this app all by myself!
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/kristofermendoza/todo-app" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://kristofermendoza.github.io/todo-app/" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="project">
                         <div class="project__wrapper">
                             <img src="./assets/libraryecom.png" class="project__img" alt="">
@@ -185,31 +214,6 @@
                     </li>
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/client_eport.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Client ePortfolio Website
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS
-                                </h4>
-                                <p class="project__description--para">
-                                    A well-designed and creative ePortfolio that includes various effects to stand out.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://kristofermendoza.github.io/eportfolio4client.github.io/" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://kristofermendoza.github.io/eportfolio4client.github.io/" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
                             <img src="./assets/react_project.jpg" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
@@ -225,6 +229,9 @@
                                     Added more pages, individual book pages and a cart page!
                                 </p>
                                 <div class="project__description--links">
+                                    <a href="https://github.com/kristofermendoza/library-react" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
                                     <a href="https://library-react.vercel.app/" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
